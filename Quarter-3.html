@@ -36,8 +36,19 @@
 
 <body>
 
-  <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="wr0G1ql4"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v16.0'
+    });
+  };
+</script>
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  
   
  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
@@ -80,7 +91,7 @@
   <main id="main">
     
 <!--======Stream======--->
- <div class="fb-video" data-href="https://fb.watch/iXFhxjG8Qq/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/100089373046733/videos/3392499507686033/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/100089373046733/videos/3392499507686033/">Our First Stream</a><p>Hello! We are One Knowledge and we&#039;re inviting you to watch our stream. 
+<div class="fb-video" data-href="https://fb.watch/iXFhxjG8Qq/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/100089373046733/videos/3392499507686033/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/100089373046733/videos/3392499507686033/">Our First Stream</a><p>Hello! We are One Knowledge and we&#039;re inviting you to watch our stream. 
 
 We&#039;ll be discussing how social media affected us by sharing our experiences as we answer through a series of questions.</p>Posted by <a href="https://www.facebook.com/people/One-Knowledge/100089373046733/">One Knowledge</a> on Thursday, February 9, 2023</blockquote></div>
  
